@@ -10,6 +10,7 @@ logfire.instrument_pydantic_ai()
 
 model = OpenAIChatModel("gpt-4o-mini", provider="github")
 
+# mcp server endpoint
 calc_server = MCPServerStreamableHTTP('http://localhost:8000/mcp')  
 
 agent = Agent(
